@@ -253,7 +253,11 @@ public final class Launcher extends Activity
         }
 
         loadHotseats();
+        
+        //监听locale，mcc，mnc是否改变，如果改变，则重写新配置  
+        //mcc：mobile country code(国家代码China 460); mnc：mobile network code(网络代码)  
         checkForLocaleChange();
+       //This allows such applications to have a virtual wallpaper that is larger than the physical 
         setWallpaperDimension();
 
         setContentView(R.layout.launcher);
