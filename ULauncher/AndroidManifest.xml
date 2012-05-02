@@ -21,9 +21,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:sharedUserId="@string/sharedUserId"
     android:installLocation="internalOnly"
-    package="org.adw.launcher2">
+    package="cn.walcl.ulauncher">
 
-    <original-package android:name="org.adw.launcher2" />
+    <original-package android:name="cn.walcl.ulauncher" />
 
     <permission
         android:name="com.android.launcher.permission.INSTALL_SHORTCUT"
@@ -63,13 +63,13 @@
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
     
     <application
-        android:name="org.adw.launcher2.LauncherApplication"
+        android:name="cn.walcl.ulauncher.LauncherApplication"
         android:process="@string/process"
         android:label="@string/application_name"
         android:icon="@drawable/ic_launcher_home">
 
         <activity
-            android:name="org.adw.launcher2.Launcher"
+            android:name="cn.walcl.ulauncher.Launcher"
             android:launchMode="singleTask"
             android:clearTaskOnLaunch="true"
             android:stateNotNeeded="true"
@@ -86,7 +86,7 @@
         </activity>
 
         <activity
-            android:name="org.adw.launcher2.WallpaperChooser"
+            android:name="cn.walcl.ulauncher.WallpaperChooser"
             android:label="@string/pick_wallpaper"
             android:icon="@drawable/ic_launcher_wallpaper"
             android:screenOrientation="nosensor"
@@ -97,9 +97,9 @@
             </intent-filter>
         </activity>
         
-        <activity android:name="org.adw.launcher2.actions.RunActionActivity">
+        <activity android:name="cn.walcl.ulauncher.actions.RunActionActivity">
         	<intent-filter>
-        		<action android:name="org.adw.launcher2.ACTION_LAUNCHERACTION" />
+        		<action android:name="cn.walcl.ulauncher.ACTION_LAUNCHERACTION" />
         	</intent-filter>
         </activity>
         
@@ -109,12 +109,12 @@
 		/>
 		<activity android:name=".ActivityPickerActivity" />
 		<activity 
-			android:name="org.adw.launcher2.settings.SettingsActivity"
+			android:name="cn.walcl.ulauncher.settings.SettingsActivity"
 		/>
 
         <!-- Intent received used to install shortcuts from other applications -->
         <receiver
-            android:name="org.adw.launcher2.InstallShortcutReceiver"
+            android:name="cn.walcl.ulauncher.InstallShortcutReceiver"
             android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">
             <intent-filter>
                 <action android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
@@ -123,14 +123,14 @@
 
         <!-- Intent received used to uninstall shortcuts from other applications -->
         <receiver
-            android:name="org.adw.launcher2.UninstallShortcutReceiver"
+            android:name="cn.walcl.ulauncher.UninstallShortcutReceiver"
             android:permission="com.android.launcher.permission.UNINSTALL_SHORTCUT">
             <intent-filter>
                 <action android:name="com.android.launcher.action.UNINSTALL_SHORTCUT" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name="org.adw.launcher2.appdb.AppDB"
+        <receiver android:name="cn.walcl.ulauncher.appdb.AppDB"
                   android:enabled="true"
                   android:exported="true">
             <intent-filter>
@@ -144,14 +144,14 @@
 
         <!-- The settings provider contains Home's data, like the workspace favorites -->
         <provider
-            android:name="org.adw.launcher2.LauncherProvider"
-            android:authorities="org.adw.launcher2.settings"
+            android:name="cn.walcl.ulauncher.LauncherProvider"
+            android:authorities="cn.walcl.ulauncher.settings"
             android:writePermission="com.android.launcher.permission.WRITE_SETTINGS"
             android:readPermission="com.android.launcher.permission.READ_SETTINGS" />
             
         <provider
-        	android:name="org.adw.launcher2.appdb.AppDBProvider"
-        	android:authorities="org.adw.launcher2.appdb" 
+        	android:name="cn.walcl.ulauncher.appdb.AppDBProvider"
+        	android:authorities="cn.walcl.ulauncher.appdb" 
         	android:exported="false" />
 
     </application>

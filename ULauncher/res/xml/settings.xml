@@ -19,10 +19,10 @@
 	</PreferenceCategory>
 	
 	
-	<org.adw.launcher2.settings.LauncherActionPreference
+	<cn.walcl.ulauncher.settings.LauncherActionPreference
 		android:key="SwipeUpAction"
 		android:title="@string/settings_swipe_up_action" />
-	<org.adw.launcher2.settings.LauncherActionPreference
+	<cn.walcl.ulauncher.settings.LauncherActionPreference
 		android:key="SwipeDownAction"
 		android:title="@string/settings_swipe_down_action" />
 </PreferenceScreen>

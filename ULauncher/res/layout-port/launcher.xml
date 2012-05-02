@@ -14,9 +14,9 @@
      limitations under the License.
 -->
 
-<org.adw.launcher2.DragLayer
+<cn.walcl.ulauncher.DragLayer
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res/org.adw.launcher2"
+    xmlns:launcher="http://schemas.android.com/apk/res/cn.walcl.ulauncher"
 
     android:id="@+id/drag_layer"
     android:layout_width="fill_parent"
@@ -25,7 +25,7 @@
     <include layout="@layout/all_apps" />
 
     <!-- The workspace contains 3 screens of cells -->
-    <org.adw.launcher2.Workspace
+    <cn.walcl.ulauncher.Workspace
         android:id="@+id/workspace"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -37,7 +37,7 @@
         <include android:id="@+id/cell4" layout="@layout/workspace_screen" />
         <include android:id="@+id/cell5" layout="@layout/workspace_screen" />
                 
-    </org.adw.launcher2.Workspace>
+    </cn.walcl.ulauncher.Workspace>
 
     <ImageView
         android:id="@+id/previous_screen"
@@ -69,7 +69,7 @@
         android:focusable="true"
         android:clickable="true" />
 
-    <org.adw.launcher2.DeleteZone
+    <cn.walcl.ulauncher.DeleteZone
         android:id="@+id/delete_zone"
         android:layout_width="@dimen/delete_zone_size"
         android:layout_height="@dimen/delete_zone_size"
@@ -90,7 +90,7 @@
         android:paddingTop="2dip"
         >
 
-        <org.adw.launcher2.HandleView
+        <cn.walcl.ulauncher.HandleView
             style="@style/HotseatButton"
             android:id="@+id/all_apps_button"
             android:layout_centerHorizontal="true"
@@ -122,4 +122,4 @@
 
     </RelativeLayout>
 
-</org.adw.launcher2.DragLayer>
+</cn.walcl.ulauncher.DragLayer>
