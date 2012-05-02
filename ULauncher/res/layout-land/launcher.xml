@@ -24,7 +24,7 @@
 
     <include layout="@layout/all_apps" />
 
-    <!-- The workspace contains 3 screens of cells -->
+    <!-- The workspace contains 5 screens of cells -->
     <org.adw.launcher2.Workspace
         android:id="@+id/workspace"
         android:layout_width="fill_parent"

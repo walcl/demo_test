@@ -768,7 +768,8 @@ public final class Launcher extends Activity
             return true;
         }
 
-        return handled;
+        return false;
+//        return handled;
     }
 
     private String getTypedText() {
