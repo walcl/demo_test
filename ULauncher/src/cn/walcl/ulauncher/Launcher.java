@@ -1588,6 +1588,7 @@ public final class Launcher extends Activity
                             stopWidgetEdit();
                         }
                 	}
+                	onBackPressed();
                 	return true;
                 }
             }
