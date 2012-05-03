@@ -14,9 +14,9 @@
      limitations under the License.
 -->
 
-<org.adw.launcher2.CellLayout
+<cn.walcl.ulauncher.CellLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res/org.adw.launcher2"
+    xmlns:launcher="http://schemas.android.com/apk/res/cn.walcl.ulauncher"
 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"

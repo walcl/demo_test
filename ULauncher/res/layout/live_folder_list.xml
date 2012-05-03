@@ -17,7 +17,7 @@
  */
 -->
 
-<org.adw.launcher2.LiveFolder xmlns:android="http://schemas.android.com/apk/res/android"
+<cn.walcl.ulauncher.LiveFolder xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical">
     
     <Button
@@ -42,4 +42,4 @@
              android:cacheColorHint="#ff333333" />
     </FrameLayout>
 
-</org.adw.launcher2.LiveFolder>
+</cn.walcl.ulauncher.LiveFolder>

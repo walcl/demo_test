@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<org.adw.launcher2.UserFolder xmlns:android="http://schemas.android.com/apk/res/android"
+<cn.walcl.ulauncher.UserFolder xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical">
     
     <Button
@@ -49,4 +49,4 @@
              android:numColumns="5" />
     </FrameLayout>
 
-</org.adw.launcher2.UserFolder>
+</cn.walcl.ulauncher.UserFolder>

@@ -28,7 +28,7 @@
     <!-- General -->
     <skip />
     <!-- Application name -->
-    <string name="application_name">ADW.Launcher 2</string>
+    <string name="application_name">U.Launcher</string>
     <!-- Name for all applications running as this uid. -->
     <string name="uid_name">Android Core Apps</string>
     <!-- Default folder name -->
@@ -165,7 +165,7 @@
 	<!-- LauncherActions -->
 	<string name="launcher_actions">Launcher Actions</string>
 	<string name="action_opendrawer">Open/Close drawer</string>
-	<string name="action_adw_settings">ADW Settings</string>
+	<string name="action_ulnr_settings">ADW Settings</string>
 
 	<!-- Custom Shortcuts -->
 	<string name="shirtcut_header">Select your desired application activity to launch.\nYou can select a custom icon too.</string>

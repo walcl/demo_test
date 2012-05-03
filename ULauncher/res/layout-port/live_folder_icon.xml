@@ -17,5 +17,5 @@
  */
 -->
 
-<org.adw.launcher2.LiveFolderIcon xmlns:android="http://schemas.android.com/apk/res/android"
+<cn.walcl.ulauncher.LiveFolderIcon xmlns:android="http://schemas.android.com/apk/res/android"
  	style="@style/WorkspaceIcon.Portrait" />
