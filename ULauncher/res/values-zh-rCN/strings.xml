@@ -66,4 +66,16 @@
     <string name="permlab_write_settings" msgid="1360567537236705628">"写入主屏幕的设置和快捷方式"</string>
     <string name="permdesc_write_settings" msgid="1098648778383349818">"允许应用程序更改主屏幕的设置和快捷方式。"</string>
     <string name="gadget_error_text" msgid="8359351016167075858">"载入窗口小部件时出现问题"</string>
-</resources>
+	<string name="action_ulnr_settings">U.Launcher设置</string>
+	<!-- Settings -->
+	<string name="settings_cat_homescreen">主屏幕</string>
+	<string name="settings_cat_drawer">描绘</string>
+	<string name="settings_drawer_sorting">排序</string>
+	<string name="settings_endless_desktop_loop">屏幕循环滚动</string>
+	<string name="settings_swipe_up_action">向上滑动触发</string>
+	<string name="settings_swipe_down_action">向下滑动触发</string>
+	
+	<string-array name="settings_sorting_names">
+		<item>按名字排序</item>
+		<item>按时间排序</item>
+	</string-array></resources>
