@@ -15,7 +15,7 @@ public class DefaultAction implements LauncherActions.Action {
 	private static final String EXTRA_BINDINGVALUE = "DefaultLauncherAction.EXTRA_BINDINGVALUE";
 
 	public static final int ACTION_OPENCLOSE_DRAWER = 1;
-	public static final int ACTION_SHOW_ADW_SETTINGS = 2;
+	public static final int ACTION_SHOW_ULNR_SETTINGS = 2;
 	public static final int ACTION_SHOW_NOTIFICATIONS = 3;
 	public static final int ACTION_MANAGE_APPS = 4;
 	public static final int ACTION_SYSTEM_SETTINGS = 5;
@@ -28,7 +28,7 @@ public class DefaultAction implements LauncherActions.Action {
 		if (launcher == null)
 			return;
 		list.add(getAction(launcher, ACTION_OPENCLOSE_DRAWER));
-		list.add(getAction(launcher, ACTION_SHOW_ADW_SETTINGS));
+		list.add(getAction(launcher, ACTION_SHOW_ULNR_SETTINGS));
 		list.add(getAction(launcher, ACTION_SHOW_NOTIFICATIONS));
 		list.add(getAction(launcher, ACTION_MANAGE_APPS));
 		list.add(getAction(launcher, ACTION_SYSTEM_SETTINGS));
@@ -40,7 +40,7 @@ public class DefaultAction implements LauncherActions.Action {
 		switch(action) {
 			case ACTION_OPENCLOSE_DRAWER:
 				name = launcher.getString(R.string.action_opendrawer); break;
-			case ACTION_SHOW_ADW_SETTINGS:
+			case ACTION_SHOW_ULNR_SETTINGS:
 				name = launcher.getString(R.string.action_ulnr_settings); break;
 			case ACTION_SHOW_NOTIFICATIONS:
 				name = launcher.getString(R.string.menu_notifications); break;
@@ -145,7 +145,7 @@ public class DefaultAction implements LauncherActions.Action {
 			return;
 		switch(value) {
 			case ACTION_OPENCLOSE_DRAWER: OpenCloseDrawer(launcher); break;
-			case ACTION_SHOW_ADW_SETTINGS: ShowSettings(launcher); break;
+			case ACTION_SHOW_ULNR_SETTINGS: ShowSettings(launcher); break;
 			case ACTION_SHOW_NOTIFICATIONS: ShowNotifications(launcher); break;
 			case ACTION_MANAGE_APPS: ManageApps(launcher); break;
 			case ACTION_SYSTEM_SETTINGS: SystemSettings(launcher); break;

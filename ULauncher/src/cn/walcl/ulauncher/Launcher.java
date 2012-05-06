@@ -1281,7 +1281,7 @@ public final class Launcher extends Activity
                 .setAlphabeticShortcut('A');
 
         DefaultAction.getAction(this, DefaultAction.ACTION_MANAGE_APPS).addToMenu(menu, MENU_GROUP_HOMESCREEN);
-        DefaultAction.getAction(this, DefaultAction.ACTION_SHOW_ADW_SETTINGS).addToMenu(menu, MENU_GROUP_HOMESCREEN);
+        DefaultAction.getAction(this, DefaultAction.ACTION_SHOW_ULNR_SETTINGS).addToMenu(menu, MENU_GROUP_HOMESCREEN);
 
         menu.add(MENU_GROUP_DRAWER, MENU_DRAWER_ADD_FOLDER, 0, "Add Folder");
 
