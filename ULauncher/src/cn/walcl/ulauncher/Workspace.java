@@ -951,11 +951,11 @@ public class Workspace extends WidgetSpace implements DropTarget, DragSource, Dr
                 }
             }
             break;
-        case MotionEvent.ACTION_UP:
+        case MotionEvent.ACTION_UP: //触摸弹起
             if (mTouchState == TOUCH_STATE_SCROLLING) {
                 final VelocityTracker velocityTracker = mVelocityTracker;
                 velocityTracker.computeCurrentVelocity(1000, mMaximumVelocity);
-                final int velocityX = (int) velocityTracker.getXVelocity();
+                final int velocityX = (int) velocityTracker.getXVelocity(); //获取滑动初速度
 
                 final int screenWidth = getWidth();
                 final int whichScreen = (int)Math.floor((getScrollX() + (screenWidth / 2.0)) / screenWidth);
@@ -971,7 +971,7 @@ public class Workspace extends WidgetSpace implements DropTarget, DragSource, Dr
                     // Don't fling across more than one screen at a time.
                     final int bound = scrolledPos > whichScreen ?
                             mCurrentScreen + 1 : mCurrentScreen;
-                    snapToScreen(Math.max(whichScreen, bound), velocityX, true);
+                    snapToScreen(Math.max(whichScreen, bound), velocityX, true);    // 切换桌面
                 } else {
                     snapToScreen(whichScreen, 0, true);
                 }
@@ -1057,8 +1057,8 @@ public class Workspace extends WidgetSpace implements DropTarget, DragSource, Dr
             duration += 100;
         }
 
-        awakenScrollBars(duration);
-        mScroller.startScroll(getScrollX(), 0, delta, 0, duration);
+        awakenScrollBars(duration); //激活滑动条
+        mScroller.startScroll(getScrollX(), 0, delta, 0, duration);//开始滑动
         invalidate();
     }
 
